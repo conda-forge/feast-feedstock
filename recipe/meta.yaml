@@ -1,5 +1,5 @@
 {% set name = "feast" %}
-{% set version = "0.35.0" %}
+{% set version = "0.36.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/feast-{{ version }}.tar.gz
-  sha256: 5e1711e6307a63c1128b953ee37c0da49a3f3b557d952b1c129097062c2db307
+  sha256: 5620db8157a7d4553ef2b7170c3f7771c328eb0f3c59810191c1e0cad7f50462
 
 build:
   entry_points:
@@ -48,7 +48,7 @@ requirements:
     - protobuf >3.20,<4.23.4
     - proto-plus >=1.20.0,<2
     - pyarrow >=4
-    - pydantic >=1,<2
+    - pydantic >=2.0.0
     - pygments >=2.12.0,<3
     - pyyaml >=5.4.0,<7
     - requests
@@ -57,8 +57,8 @@ requirements:
     - tenacity >=7,<9
     - toml >=0.10.0,<1
     - tqdm >=4,<5
-    - typeguard ==2.13.3 # Pinned
-    - fastapi >=0.68.0,<0.100
+    - typeguard >=4.0.0
+    - fastapi >=0.68.0
     - uvicorn >=0.14.0,<1
     - gunicorn
     - dask-core >=2021.1.0
