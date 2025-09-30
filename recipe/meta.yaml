@@ -1,5 +1,5 @@
 {% set name = "feast" %}
-{% set version = "0.52.0" %}
+{% set version = "0.54.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/feast-{{ version }}.tar.gz
-  sha256: d10846e66c6f333713f9c954c3b06660404eb998902387345511084c9d279471
+  sha256: 9e7f9be608902febbf813f8cf5730d3227d4d18262039d3601427319d1da3800
 
 build:
   entry_points:
@@ -50,7 +50,7 @@ requirements:
     - tqdm >=4,<5
     - typeguard >=4.0.0
     - fastapi >=0.68.0
-    - uvicorn ==0.34.0
+    - uvicorn >=0.30.6,<=0.34.0
     - uvicorn-worker
     - gunicorn
     - dask-core >=2024.2.1
