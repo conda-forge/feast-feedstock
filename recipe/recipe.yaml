@@ -41,8 +41,8 @@ requirements:
     - mmh3
     - numpy >=2.0.0,<3
     - pandas >=1.4.3,<3
-    - pyarrow <=17.0.0
-    - pydantic ==2.10.6
+    - pyarrow >=21.0.0
+    - pydantic >=2.10.6
     - pygments >=2.12.0,<3
     - pyyaml >=5.4.0,<7
     - requests
@@ -67,6 +67,7 @@ tests:
       imports:
         - feast
       pip_check: true
+      # multiprocess 0.70.18 has requirement dill>=0.4.0, but you have dill 0.3.9.
       python_version: ${{ python_min }}.*
   - requirements:
       run:
