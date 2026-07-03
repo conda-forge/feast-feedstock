@@ -38,7 +38,7 @@ requirements:
 tests:
   - python:
       imports:
-        - go
+        - feast
       pip_check: true
       python_version:
         - ${{ python_min }}.*
