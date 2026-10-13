@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: 0.66.0
+  version: 0.67.0
 
 package:
   name: feast
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/f/feast/feast-${{ version }}.tar.gz
-  sha256: 4d059be34bc2f30e4dff976ce0d2a014fc364fe4d1354c3c44ccf74d78f24567
+  sha256: 46f01aa649550e67b00fdf58f9f6dd3679925d908b9bfcac04e3050d49ff5523
 
 build:
   number: 0
@@ -26,7 +26,7 @@ requirements:
     - python >=${{ python_min }}
     - click >=7.0.0,<9.0.0
     - colorama >=0.3.9,<1
-    - dill >=0.3.0,<0.4.dev0
+    - dill >=0.3.0,<0.5
     - protobuf >=4.24.0
     - jinja2 >=2,<4
     - mmh3
