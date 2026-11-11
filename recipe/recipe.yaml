@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: 0.67.0
+  version: "0.68.0"
 
 package:
   name: feast
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/f/feast/feast-${{ version }}.tar.gz
-  sha256: 46f01aa649550e67b00fdf58f9f6dd3679925d908b9bfcac04e3050d49ff5523
+  sha256: 4692456f57205ff32b2e3eb4aca27770960c116c32cc63f1bd57a10cf525c849
 
 build:
   number: 0
